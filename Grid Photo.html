@@ -1,0 +1,179 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photo Grid</title>
+  <!-- Tailwind CSS (CSS-only CDN build, no JavaScript) -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <meta name="description" content="High-quality responsive photo grid built with HTML5 and Tailwind CSS." />
+</head>
+<body class="min-h-screen bg-gray-950 text-gray-100 antialiased">
+  <main>
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <header class="max-w-3xl">
+        <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">High‑Quality Photo Grid</h1>
+        <p class="mt-3 text-gray-400">Responsive, fast, and accessible — built with Tailwind CSS. Hover to see subtle motion. Images are lazy‑loaded for performance.</p>
+      </header>
+
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6">
+        <!-- Card 1 -->
+        <a href="https://picsum.photos/id/1015/2400/1600" target="_blank" rel="noopener noreferrer"
+           class="group relative block overflow-hidden rounded-xl bg-gray-900 ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-gray-950 shadow-lg">
+          <img
+            src="https://picsum.photos/id/1015/800/534"
+            srcset="https://picsum.photos/id/1015/800/534 800w, https://picsum.photos/id/1015/1200/801 1200w, https://picsum.photos/id/1015/1600/1067 1600w"
+            sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+            alt="Mountain landscape with a lake"
+            class="w-full h-56 sm:h-64 md:h-72 object-cover transform transition-transform duration-700 ease-out group-hover:scale-105"
+            loading="lazy" decoding="async" />
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-black/0 to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="https://picsum.photos/id/1024/2400/1600" target="_blank" rel="noopener noreferrer"
+           class="group relative block overflow-hidden rounded-xl bg-gray-900 ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-gray-950 shadow-lg">
+          <img
+            src="https://picsum.photos/id/1024/800/534"
+            srcset="https://picsum.photos/id/1024/800/534 800w, https://picsum.photos/id/1024/1200/801 1200w, https://picsum.photos/id/1024/1600/1067 1600w"
+            sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+            alt="Close-up of a macaw parrot"
+            class="w-full h-56 sm:h-64 md:h-72 object-cover transform transition-transform duration-700 ease-out group-hover:scale-105"
+            loading="lazy" decoding="async" />
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-black/0 to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="https://picsum.photos/id/1039/2400/1600" target="_blank" rel="noopener noreferrer"
+           class="group relative block overflow-hidden rounded-xl bg-gray-900 ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-gray-950 shadow-lg">
+          <img
+            src="https://picsum.photos/id/1039/800/534"
+            srcset="https://picsum.photos/id/1039/800/534 800w, https://picsum.photos/id/1039/1200/801 1200w, https://picsum.photos/id/1039/1600/1067 1600w"
+            sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+            alt="Forest with morning fog"
+            class="w-full h-56 sm:h-64 md:h-72 object-cover transform transition-transform duration-700 ease-out group-hover:scale-105"
+            loading="lazy" decoding="async" />
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-black/0 to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </a>
+
+        <!-- Card 4 -->
+        <a href="https://picsum.photos/id/1040/2400/1600" target="_blank" rel="noopener noreferrer"
+           class="group relative block overflow-hidden rounded-xl bg-gray-900 ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-gray-950 shadow-lg">
+          <img
+            src="https://picsum.photos/id/1040/800/534"
+            srcset="https://picsum.photos/id/1040/800/534 800w, https://picsum.photos/id/1040/1200/801 1200w, https://picsum.photos/id/1040/1600/1067 1600w"
+            sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+            alt="Desert sand dunes at golden hour"
+            class="w-full h-56 sm:h-64 md:h-72 object-cover transform transition-transform duration-700 ease-out group-hover:scale-105"
+            loading="lazy" decoding="async" />
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-black/0 to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </a>
+
+        <!-- Card 5 -->
+        <a href="https://picsum.photos/id/1043/2400/1600" target="_blank" rel="noopener noreferrer"
+           class="group relative block overflow-hidden rounded-xl bg-gray-900 ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-gray-950 shadow-lg">
+          <img
+            src="https://picsum.photos/id/1043/800/534"
+            srcset="https://picsum.photos/id/1043/800/534 800w, https://picsum.photos/id/1043/1200/801 1200w, https://picsum.photos/id/1043/1600/1067 1600w"
+            sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+            alt="Rocky coastline with waves"
+            class="w-full h-56 sm:h-64 md:h-72 object-cover transform transition-transform duration-700 ease-out group-hover:scale-105"
+            loading="lazy" decoding="async" />
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-black/0 to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </a>
+
+        <!-- Card 6 -->
+        <a href="https://picsum.photos/id/1050/2400/1600" target="_blank" rel="noopener noreferrer"
+           class="group relative block overflow-hidden rounded-xl bg-gray-900 ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-gray-950 shadow-lg">
+          <img
+            src="https://picsum.photos/id/1050/800/534"
+            srcset="https://picsum.photos/id/1050/800/534 800w, https://picsum.photos/id/1050/1200/801 1200w, https://picsum.photos/id/1050/1600/1067 1600w"
+            sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+            alt="Snowy mountains under a blue sky"
+            class="w-full h-56 sm:h-64 md:h-72 object-cover transform transition-transform duration-700 ease-out group-hover:scale-105"
+            loading="lazy" decoding="async" />
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-black/0 to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </a>
+
+        <!-- Card 7 -->
+        <a href="https://picsum.photos/id/1051/2400/1600" target="_blank" rel="noopener noreferrer"
+           class="group relative block overflow-hidden rounded-xl bg-gray-900 ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-gray-950 shadow-lg">
+          <img
+            src="https://picsum.photos/id/1051/800/534"
+            srcset="https://picsum.photos/id/1051/800/534 800w, https://picsum.photos/id/1051/1200/801 1200w, https://picsum.photos/id/1051/1600/1067 1600w"
+            sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+            alt="City skyline at dusk"
+            class="w-full h-56 sm:h-64 md:h-72 object-cover transform transition-transform duration-700 ease-out group-hover:scale-105"
+            loading="lazy" decoding="async" />
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-black/0 to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </a>
+
+        <!-- Card 8 -->
+        <a href="https://picsum.photos/id/1067/2400/1600" target="_blank" rel="noopener noreferrer"
+           class="group relative block overflow-hidden rounded-xl bg-gray-900 ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-gray-950 shadow-lg">
+          <img
+            src="https://picsum.photos/id/1067/800/534"
+            srcset="https://picsum.photos/id/1067/800/534 800w, https://picsum.photos/id/1067/1200/801 1200w, https://picsum.photos/id/1067/1600/1067 1600w"
+            sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+            alt="Lush green valley and river"
+            class="w-full h-56 sm:h-64 md:h-72 object-cover transform transition-transform duration-700 ease-out group-hover:scale-105"
+            loading="lazy" decoding="async" />
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-black/0 to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </a>
+
+        <!-- Card 9 -->
+        <a href="https://picsum.photos/id/1074/2400/1600" target="_blank" rel="noopener noreferrer"
+           class="group relative block overflow-hidden rounded-xl bg-gray-900 ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-gray-950 shadow-lg">
+          <img
+            src="https://picsum.photos/id/1074/800/534"
+            srcset="https://picsum.photos/id/1074/800/534 800w, https://picsum.photos/id/1074/1200/801 1200w, https://picsum.photos/id/1074/1600/1067 1600w"
+            sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+            alt="Ocean horizon with dramatic clouds"
+            class="w-full h-56 sm:h-64 md:h-72 object-cover transform transition-transform duration-700 ease-out group-hover:scale-105"
+            loading="lazy" decoding="async" />
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-black/0 to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </a>
+
+        <!-- Card 10 -->
+        <a href="https://picsum.photos/id/1084/2400/1600" target="_blank" rel="noopener noreferrer"
+           class="group relative block overflow-hidden rounded-xl bg-gray-900 ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-gray-950 shadow-lg">
+          <img
+            src="https://picsum.photos/id/1084/800/534"
+            srcset="https://picsum.photos/id/1084/800/534 800w, https://picsum.photos/id/1084/1200/801 1200w, https://picsum.photos/id/1084/1600/1067 1600w"
+            sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+            alt="Rolling hills and open fields"
+            class="w-full h-56 sm:h-64 md:h-72 object-cover transform transition-transform duration-700 ease-out group-hover:scale-105"
+            loading="lazy" decoding="async" />
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-black/0 to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </a>
+
+        <!-- Card 11 -->
+        <a href="https://picsum.photos/id/1080/2400/1600" target="_blank" rel="noopener noreferrer"
+           class="group relative block overflow-hidden rounded-xl bg-gray-900 ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-gray-950 shadow-lg">
+          <img
+            src="https://picsum.photos/id/1080/800/534"
+            srcset="https://picsum.photos/id/1080/800/534 800w, https://picsum.photos/id/1080/1200/801 1200w, https://picsum.photos/id/1080/1600/1067 1600w"
+            sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+            alt="Pine forest in soft light"
+            class="w-full h-56 sm:h-64 md:h-72 object-cover transform transition-transform duration-700 ease-out group-hover:scale-105"
+            loading="lazy" decoding="async" />
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-black/0 to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </a>
+
+        <!-- Card 12 -->
+        <a href="https://picsum.photos/id/1003/2400/1600" target="_blank" rel="noopener noreferrer"
+           class="group relative block overflow-hidden rounded-xl bg-gray-900 ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-gray-950 shadow-lg">
+          <img
+            src="https://picsum.photos/id/1003/800/534"
+            srcset="https://picsum.photos/id/1003/800/534 800w, https://picsum.photos/id/1003/1200/801 1200w, https://picsum.photos/id/1003/1600/1067 1600w"
+            sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+            alt="Snow-capped mountain peak"
+            class="w-full h-56 sm:h-64 md:h-72 object-cover transform transition-transform duration-700 ease-out group-hover:scale-105"
+            loading="lazy" decoding="async" />
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-black/0 to-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
