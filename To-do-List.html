@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple To-Do List</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+	<div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
+		<h1 class="text-2xl font-bold mb-6 text-center">To-Do List</h1>
+		<div class="flex mb-4">
+			<input id="taskInput" type="text" placeholder="Add a new task..." class="flex-1 border border-gray-300 rounded-l px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+			<button id="addTaskBtn" class="bg-blue-500 text-white px-4 py-2 rounded-r hover:bg-blue-600 transition">Add</button>
+		</div>
+		<ul id="taskList" class="space-y-2"></ul>
+	</div>
+
+	<script>
+		const taskInput = document.getElementById('taskInput');
+		const addTaskBtn = document.getElementById('addTaskBtn');
+		const taskList = document.getElementById('taskList');
+
+		function createTaskElement(taskText) {
+			const li = document.createElement('li');
+			li.className = 'flex items-center justify-between bg-gray-50 px-3 py-2 rounded shadow-sm';
+
+			const span = document.createElement('span');
+			span.textContent = taskText;
+			span.className = 'flex-1 cursor-pointer';
+
+			// Toggle complete
+			span.onclick = function() {
+				span.classList.toggle('line-through');
+				span.classList.toggle('text-gray-400');
+			};
+
+			const removeBtn = document.createElement('button');
+			removeBtn.textContent = 'Remove';
+			removeBtn.className = 'ml-4 text-red-500 hover:text-red-700 text-sm';
+			removeBtn.onclick = function() {
+				li.remove();
+			};
+
+			li.appendChild(span);
+			li.appendChild(removeBtn);
+			return li;
+		}
+
+		addTaskBtn.onclick = function() {
+			const taskText = taskInput.value.trim();
+			if (taskText) {
+				const taskEl = createTaskElement(taskText);
+				taskList.appendChild(taskEl);
+				taskInput.value = '';
+				taskInput.focus();
+			}
+		};
+
+		taskInput.addEventListener('keydown', function(e) {
+			if (e.key === 'Enter') {
+				addTaskBtn.click();
+			}
+		});
+	</script>
+</body>
+</html>
